@@ -13,6 +13,7 @@
 		BFA08D90229E6F7D007C3FF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA08D8E229E6F7D007C3FF3 /* Main.storyboard */; };
 		BFA08D92229E6F7E007C3FF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFA08D91229E6F7E007C3FF3 /* Assets.xcassets */; };
 		BFA08D95229E6F7E007C3FF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA08D93229E6F7E007C3FF3 /* LaunchScreen.storyboard */; };
+		BFA08D9D229EACE8007C3FF3 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA08D9C229EACE8007C3FF3 /* Styles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,17 @@
 		BFA08D91229E6F7E007C3FF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFA08D94229E6F7E007C3FF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFA08D96229E6F7E007C3FF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFA08D9C229EACE8007C3FF3 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		BFA08DA0229EAF54007C3FF3 /* ZillaSlab-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZillaSlab-Light.ttf"; sourceTree = "<group>"; };
+		BFA08DA1229EAF54007C3FF3 /* ZillaSlab-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZillaSlab-SemiBold.ttf"; sourceTree = "<group>"; };
+		BFA08DA2229EAF54007C3FF3 /* ZillaSlab-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZillaSlab-Medium.ttf"; sourceTree = "<group>"; };
+		BFA08DA3229EAF55007C3FF3 /* ZillaSlab-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZillaSlab-BoldItalic.ttf"; sourceTree = "<group>"; };
+		BFA08DA4229EAF55007C3FF3 /* ZillaSlab-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZillaSlab-Italic.ttf"; sourceTree = "<group>"; };
+		BFA08DA5229EAF55007C3FF3 /* ZillaSlab-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZillaSlab-MediumItalic.ttf"; sourceTree = "<group>"; };
+		BFA08DA6229EAF55007C3FF3 /* ZillaSlab-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZillaSlab-Bold.ttf"; sourceTree = "<group>"; };
+		BFA08DA7229EAF55007C3FF3 /* ZillaSlab-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZillaSlab-LightItalic.ttf"; sourceTree = "<group>"; };
+		BFA08DA8229EAF55007C3FF3 /* ZillaSlab-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZillaSlab-Regular.ttf"; sourceTree = "<group>"; };
+		BFA08DA9229EAF55007C3FF3 /* ZillaSlab-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZillaSlab-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,14 +81,33 @@
 		BFA08D89229E6F7D007C3FF3 /* StylingDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BFA08D9F229EAF34007C3FF3 /* Font */,
 				BFA08D8A229E6F7D007C3FF3 /* AppDelegate.swift */,
 				BFA08D8C229E6F7D007C3FF3 /* ViewController.swift */,
 				BFA08D8E229E6F7D007C3FF3 /* Main.storyboard */,
 				BFA08D91229E6F7E007C3FF3 /* Assets.xcassets */,
 				BFA08D93229E6F7E007C3FF3 /* LaunchScreen.storyboard */,
 				BFA08D96229E6F7E007C3FF3 /* Info.plist */,
+				BFA08D9C229EACE8007C3FF3 /* Styles.swift */,
 			);
 			path = StylingDemo;
+			sourceTree = "<group>";
+		};
+		BFA08D9F229EAF34007C3FF3 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				BFA08DA6229EAF55007C3FF3 /* ZillaSlab-Bold.ttf */,
+				BFA08DA3229EAF55007C3FF3 /* ZillaSlab-BoldItalic.ttf */,
+				BFA08DA4229EAF55007C3FF3 /* ZillaSlab-Italic.ttf */,
+				BFA08DA0229EAF54007C3FF3 /* ZillaSlab-Light.ttf */,
+				BFA08DA7229EAF55007C3FF3 /* ZillaSlab-LightItalic.ttf */,
+				BFA08DA2229EAF54007C3FF3 /* ZillaSlab-Medium.ttf */,
+				BFA08DA5229EAF55007C3FF3 /* ZillaSlab-MediumItalic.ttf */,
+				BFA08DA8229EAF55007C3FF3 /* ZillaSlab-Regular.ttf */,
+				BFA08DA1229EAF54007C3FF3 /* ZillaSlab-SemiBold.ttf */,
+				BFA08DA9229EAF55007C3FF3 /* ZillaSlab-SemiBoldItalic.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		E647671B93C8CA60BD44E4AF /* Pods */ = {
@@ -209,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFA08D8D229E6F7D007C3FF3 /* ViewController.swift in Sources */,
+				BFA08D9D229EACE8007C3FF3 /* Styles.swift in Sources */,
 				BFA08D8B229E6F7D007C3FF3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
