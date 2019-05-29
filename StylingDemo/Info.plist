@@ -23,6 +23,8 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>ZillaSlab-Medium.ttf</string>
+		<string>ZillaSlab-Light.ttf</string>
+		<string>ZillaSlab-Bold.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

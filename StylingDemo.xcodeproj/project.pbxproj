@@ -15,6 +15,8 @@
 		BFA08D95229E6F7E007C3FF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA08D93229E6F7E007C3FF3 /* LaunchScreen.storyboard */; };
 		BFA08D9D229EACE8007C3FF3 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA08D9C229EACE8007C3FF3 /* Styles.swift */; };
 		BFA08DAA229EB1EA007C3FF3 /* ZillaSlab-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFA08DA2229EAF54007C3FF3 /* ZillaSlab-Medium.ttf */; };
+		BFA08DAB229ECE42007C3FF3 /* ZillaSlab-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFA08DA0229EAF54007C3FF3 /* ZillaSlab-Light.ttf */; };
+		BFA08DAC229ECE50007C3FF3 /* ZillaSlab-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFA08DA6229EAF55007C3FF3 /* ZillaSlab-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -181,6 +183,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFA08DAA229EB1EA007C3FF3 /* ZillaSlab-Medium.ttf in Resources */,
+				BFA08DAB229ECE42007C3FF3 /* ZillaSlab-Light.ttf in Resources */,
+				BFA08DAC229ECE50007C3FF3 /* ZillaSlab-Bold.ttf in Resources */,
 				BFA08D95229E6F7E007C3FF3 /* LaunchScreen.storyboard in Resources */,
 				BFA08D92229E6F7E007C3FF3 /* Assets.xcassets in Resources */,
 				BFA08D90229E6F7D007C3FF3 /* Main.storyboard in Resources */,

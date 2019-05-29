@@ -13,9 +13,7 @@ extension UIFont {
     
     enum FontWeight: String {
         case bold = "Bold"
-        case semiBold = "SemiBold"
         case medium = "Medium"
-        case regular = "Regular"
         case light = "Light"
     }
     
@@ -25,7 +23,7 @@ extension UIFont {
 }
 
 class Styles {
-    static let brownBody = StringStyle(.font(.zillaslab(.medium, 20)), .color(.brown), .lineHeightMultiple(0.8), .headIndent(18), .adapt(.body))
+    static let brownBody = StringStyle(.font(.zillaslab(.light, 20)), .color(.brown), .lineHeightMultiple(0.8), .headIndent(18), .adapt(.body))
     
     init() {
         NamedStyles.shared.registerStyle(forName: "BrownBody", style: Styles.brownBody)
