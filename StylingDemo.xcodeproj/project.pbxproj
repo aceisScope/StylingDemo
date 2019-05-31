@@ -86,12 +86,12 @@
 			children = (
 				BFA08D9F229EAF34007C3FF3 /* Font */,
 				BFA08D8A229E6F7D007C3FF3 /* AppDelegate.swift */,
+				BFA08D9C229EACE8007C3FF3 /* Styles.swift */,
 				BFA08D8C229E6F7D007C3FF3 /* StylesViewController.swift */,
 				BFA08D8E229E6F7D007C3FF3 /* Main.storyboard */,
 				BFA08D91229E6F7E007C3FF3 /* Assets.xcassets */,
 				BFA08D93229E6F7E007C3FF3 /* LaunchScreen.storyboard */,
 				BFA08D96229E6F7E007C3FF3 /* Info.plist */,
-				BFA08D9C229EACE8007C3FF3 /* Styles.swift */,
 			);
 			path = StylingDemo;
 			sourceTree = "<group>";

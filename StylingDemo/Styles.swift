@@ -23,9 +23,11 @@ extension UIFont {
 }
 
 class Styles {
-    static let brownBody = StringStyle(.font(.zillaslab(.light, 20)), .color(.brown), .lineHeightMultiple(0.8), .headIndent(18), .adapt(.body))
+    static let brownBody = StringStyle(.font(.zillaslab(.medium, 20)), .color(.brown), .lineHeightMultiple(0.8), .headIndent(18))
+    static let blueBody = StringStyle(.font(.zillaslab(.medium, 20)), .color(.blue), .lineHeightMultiple(0.8), .headIndent(18))
     
     init() {
         NamedStyles.shared.registerStyle(forName: "BrownBody", style: Styles.brownBody)
+        NamedStyles.shared.registerStyle(forName: "BlueBody", style: Styles.blueBody)
     }
 }

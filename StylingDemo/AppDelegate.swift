@@ -9,8 +9,11 @@
 import UIKit
 
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    let styles = Styles()
+    
     var window: UIWindow?
 
 
