@@ -53,9 +53,9 @@ class StylesViewController: UIViewController, UITableViewDataSource, UITableView
         case 0:
             return "NSAtrributedString"
         case 1:
-            return "StringStyles.brownBody"
+            return "brownBody"
         case 2:
-            return "Registered styles"
+            return "Registered style: magentaTracking"
         default:
             return nil
         }

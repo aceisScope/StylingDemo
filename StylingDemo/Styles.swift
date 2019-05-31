@@ -24,10 +24,10 @@ extension UIFont {
 
 class Styles {
     static let brownBody = StringStyle(.font(.zillaslab(.medium, 20)), .color(.brown), .lineHeightMultiple(0.8), .headIndent(18))
-    static let blueBody = StringStyle(.font(.zillaslab(.medium, 20)), .color(.blue), .lineHeightMultiple(0.8), .headIndent(18))
+    static let magentaTracking = StringStyle(.font(.zillaslab(.medium, 20)), .color(.magenta), .lineHeightMultiple(0.8), .headIndent(18), .tracking(.point(0.5)))
     
     init() {
         NamedStyles.shared.registerStyle(forName: "BrownBody", style: Styles.brownBody)
-        NamedStyles.shared.registerStyle(forName: "BlueBody", style: Styles.blueBody)
+        NamedStyles.shared.registerStyle(forName: "MagentaTracking", style: Styles.magentaTracking)
     }
 }
