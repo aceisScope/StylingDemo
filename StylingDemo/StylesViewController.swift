@@ -18,7 +18,7 @@ class StylesViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var tableView: UITableView!
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 4
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -27,7 +27,8 @@ class StylesViewController: UIViewController, UITableViewDataSource, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StylesCell", for: indexPath) as! StylesCell
-        if indexPath.section == 0 {
+        switch indexPath.section {
+        case 0:
             let paragraphStyle = NSMutableParagraphStyle()
             paragraphStyle.lineHeightMultiple = 0.8
             paragraphStyle.headIndent = 18
@@ -38,11 +39,16 @@ class StylesViewController: UIViewController, UITableViewDataSource, UITableView
                 .paragraphStyle: paragraphStyle,
             ]
             cell.stylesLabel?.attributedText = NSAttributedString(string: "→ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", attributes: attributes)
-        } else if indexPath.section == 1 {
+        case 1:
             cell.stylesLabel?.bonMotStyle = Styles.brownBody
             cell.stylesLabel?.styledText = "→ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        } else if indexPath.section == 2 {
+        case 2:
             cell.stylesLabel?.styledText = "→ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        case 3:
+            cell.stylesLabel?.bonMotStyle = Styles.xmlStyle
+            cell.stylesLabel?.styledText = "Lorem ipsum dolor sit amet, <large>consectetur adipiscing</large> elit, sed do eiusmod tempor incididunt ut <kern>labore et dolore magna aliqua.</kern>"
+        default:
+            break
         }
         
         return cell
@@ -56,6 +62,8 @@ class StylesViewController: UIViewController, UITableViewDataSource, UITableView
             return "brownBody"
         case 2:
             return "Registered style: magentaTracking"
+        case 3:
+            return "XML styles"
         default:
             return nil
         }

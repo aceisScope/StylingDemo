@@ -25,6 +25,20 @@ extension UIFont {
 class Styles {
     static let brownBody = StringStyle(.font(.zillaslab(.medium, 20)), .color(.brown), .lineHeightMultiple(0.8), .headIndent(18))
     static let magentaTracking = StringStyle(.font(.zillaslab(.medium, 20)), .color(.magenta), .lineHeightMultiple(0.8), .headIndent(18), .tracking(.point(0.5)))
+    static let xmlStyle = StringStyle(
+        .font(.zillaslab(.medium, 20)),
+        .lineSpacing(20),
+        .xmlRules([
+            .style("large", StringStyle(
+                .font(.zillaslab(.bold, 20)),
+                .lineSpacing(40),
+                .adapt(.control))),
+            .style("kern", StringStyle(
+                .tracking(.adobe(-80))
+            )),
+            ])
+    )
+
     
     init() {
         NamedStyles.shared.registerStyle(forName: "BrownBody", style: Styles.brownBody)
