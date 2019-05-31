@@ -38,10 +38,14 @@ class Styles {
             )),
             ])
     )
-
+    static let leftLabel = StringStyle(.font(.zillaslab(.bold, 40)), .color(.darkGray), .alignment(.right))
+    static let rightLabel = StringStyle(.font(.zillaslab(.bold, 30)), .color(.lightGray))
     
     init() {
         NamedStyles.shared.registerStyle(forName: "BrownBody", style: Styles.brownBody)
         NamedStyles.shared.registerStyle(forName: "MagentaTracking", style: Styles.magentaTracking)
+        NamedStyles.shared.registerStyle(forName: "XmlStyle", style: Styles.xmlStyle)
+        NamedStyles.shared.registerStyle(forName: "LeftLabel", style: Styles.leftLabel)
+        NamedStyles.shared.registerStyle(forName: "RightLabel", style: Styles.rightLabel)
     }
 }

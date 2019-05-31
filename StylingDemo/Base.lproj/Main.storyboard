@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StylesCell" rowHeight="81" id="iIk-xS-CMp" customClass="StylesCell" customModule="StylingDemo" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SingleLabelCell" rowHeight="81" id="iIk-xS-CMp" customClass="SingleLabelCell" customModule="StylingDemo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="81"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iIk-xS-CMp" id="olF-vj-zNQ">
@@ -48,6 +48,54 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="stylesLabel" destination="deL-eM-jzr" id="yfZ-CE-XUC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DoubleLabelCell" rowHeight="81" id="hHa-rs-V0F" customClass="DoubleLabelCell" customModule="StylingDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="109" width="414" height="81"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hHa-rs-V0F" id="eqf-Ov-pIF">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="81"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="167" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Na-ci-aFQ">
+                                                    <rect key="frame" x="10" y="10" width="187" height="61"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="bonMotStyleName" value="LeftLabel"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="167" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5j2-kj-7He">
+                                                    <rect key="frame" x="217" y="10" width="187" height="61"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="bonMotStyleName" value="RightLabel"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="5j2-kj-7He" secondAttribute="trailing" constant="10" id="10S-UR-Frb"/>
+                                                <constraint firstItem="5j2-kj-7He" firstAttribute="leading" secondItem="eqf-Ov-pIF" secondAttribute="centerX" constant="10" id="P7B-xf-gz0"/>
+                                                <constraint firstItem="7Na-ci-aFQ" firstAttribute="leading" secondItem="eqf-Ov-pIF" secondAttribute="leading" constant="10" id="Qpy-do-amp"/>
+                                                <constraint firstItem="7Na-ci-aFQ" firstAttribute="top" secondItem="eqf-Ov-pIF" secondAttribute="top" constant="10" id="cxg-cf-VM2"/>
+                                                <constraint firstAttribute="bottom" secondItem="5j2-kj-7He" secondAttribute="bottom" constant="10" id="h8I-8d-fJI"/>
+                                                <constraint firstItem="5j2-kj-7He" firstAttribute="top" secondItem="7Na-ci-aFQ" secondAttribute="top" id="luv-JB-MKb" customClass="BONTextAlignmentConstraint">
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="firstAlignment" value="x-height"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="secondAlignment" value="x-height"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </constraint>
+                                                <constraint firstAttribute="bottom" secondItem="7Na-ci-aFQ" secondAttribute="bottom" constant="10" id="oMQ-Fg-e5X"/>
+                                                <constraint firstItem="5j2-kj-7He" firstAttribute="leading" secondItem="eqf-Ov-pIF" secondAttribute="centerX" constant="10" id="tjv-b0-9gq"/>
+                                                <constraint firstAttribute="centerX" secondItem="7Na-ci-aFQ" secondAttribute="trailing" constant="10" id="yJc-oF-z7B"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="leftLabel" destination="7Na-ci-aFQ" id="Utq-hz-fvA"/>
+                                            <outlet property="rightLabel" destination="5j2-kj-7He" id="F0Z-OY-3G3"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
