@@ -23,7 +23,7 @@ class StylesViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var tableView: UITableView!
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 5
+        return 6
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -53,6 +53,8 @@ class StylesViewController: UIViewController, UITableViewDataSource, UITableView
             case 3:
                 cell.stylesLabel?.bonMotStyle = Styles.xmlStyle
                 cell.stylesLabel?.styledText = "Lorem ipsum dolor sit amet, <large>consectetur adipiscing</large> elit, sed do eiusmod tempor incididunt ut <kern>labore et dolore magna aliqua.</kern>"
+            case 4:
+                cell.stylesLabel?.attributedText = NSAttributedString.composed(of: ["Lorem ipsum dolor sit amet,".styled(with: Styles.brownBody), "\nsed do eiusmod tempor incididunt ut".styled(with: Styles.lightStyle)])
             default:
                 break
             }
@@ -75,6 +77,8 @@ class StylesViewController: UIViewController, UITableViewDataSource, UITableView
         case 3:
             return "XML styles"
         case 4:
+            return "Composable"
+        case 5:
             return "Vertical Text Alignment"
         default:
             return nil
