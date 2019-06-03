@@ -22,8 +22,10 @@ class StylesViewController: UIViewController, UITableViewDataSource, UITableView
 
     @IBOutlet weak var tableView: UITableView!
     
+    private let numberOfExamples = 6
+    
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 6
+        return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -31,7 +33,7 @@ class StylesViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.section < tableView.numberOfSections - 1 {
+        if indexPath.section < numberOfExamples {
             let cell = tableView.dequeueReusableCell(withIdentifier: "SingleLabelCell", for: indexPath) as! SingleLabelCell
             switch indexPath.section {
             case 0:
@@ -55,6 +57,12 @@ class StylesViewController: UIViewController, UITableViewDataSource, UITableView
                 cell.stylesLabel?.styledText = "Lorem ipsum dolor sit amet, <large>consectetur adipiscing</large> elit, sed do eiusmod tempor incididunt ut <kern>labore et dolore magna aliqua.</kern>"
             case 4:
                 cell.stylesLabel?.attributedText = NSAttributedString.composed(of: ["Lorem ipsum dolor sit amet,".styled(with: Styles.brownBody), "\nsed do eiusmod tempor incididunt ut".styled(with: Styles.lightStyle)])
+            case 5:
+                cell.stylesLabel?.attributedText = NSAttributedString.composed(of: [
+                    #imageLiteral(resourceName: "gift").styled(with: .baselineOffset(-5)),
+                    Special.noBreakSpace,
+                    "this is a gift".styled(with: Styles.lightStyle)
+                    ])
             default:
                 break
             }
@@ -79,7 +87,9 @@ class StylesViewController: UIViewController, UITableViewDataSource, UITableView
         case 4:
             return "Composable"
         case 5:
-            return "Vertical Text Alignment"
+            return "Composable with image"
+        case 6:
+            return "Vertical text alignment"
         default:
             return nil
         }
