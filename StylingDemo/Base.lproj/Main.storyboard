@@ -99,7 +99,7 @@
                                                 <constraint firstItem="5j2-kj-7He" firstAttribute="leading" secondItem="eqf-Ov-pIF" secondAttribute="centerX" constant="10" id="tjv-b0-9gq"/>
                                                 <constraint firstItem="7Na-ci-aFQ" firstAttribute="top" secondItem="uH7-2B-TCh" secondAttribute="top" id="uZv-UR-jkm" customClass="BONTextAlignmentConstraint">
                                                     <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="firstAlignment" value="capheight"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="firstAlignment" value="x-height"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </constraint>
                                                 <constraint firstAttribute="centerX" secondItem="7Na-ci-aFQ" secondAttribute="trailing" constant="10" id="yJc-oF-z7B"/>
