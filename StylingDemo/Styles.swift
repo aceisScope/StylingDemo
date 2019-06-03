@@ -40,7 +40,7 @@ class Styles {
     )
     static let lightStyle = StringStyle(.font(.zillaslab(.light, 20)), .lineHeightMultiple(1.2))
     static let leftLabel = StringStyle(.font(.zillaslab(.bold, 40)), .color(.darkGray), .alignment(.right))
-    static let rightLabel = StringStyle(.font(.zillaslab(.bold, 30)), .color(.lightGray))
+    static let rightLabel = StringStyle(.font(.systemFont(ofSize: 40)), .color(.lightGray))
     
     init() {
         NamedStyles.shared.registerStyle(forName: "BrownBody", style: Styles.brownBody)
